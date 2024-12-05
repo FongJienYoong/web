@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], select, input[type="number"], input[type="submit"], input[type="reset"] {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+.terms {
+    text-align: left;
+}
+
+.header {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #7254ec;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
