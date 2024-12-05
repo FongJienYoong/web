@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form method="POST" action="travel_process.php">
+        <table>
+            <tr>
+                <td colspan="2" class="header">Travel Reservation Form</td>
+            </tr>
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="name" required placeholder="Fong Jien Yoong"></td>
+            </tr>
+            <tr>
+                <td>IC Number:</td>
+                <td><input type="text" name="ic_number" required placeholder="030614070757 no spaces and -"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="text" name="phone_number" required placeholder="0149933441"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required placeholder="jienyoong888@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Destination:</td>
+                <td>
+                    <select name="destination" required>
+                        <option value="">- Please Select -</option>
+                        <option value="Langkawi">Langkawi</option>
+                        <option value="Kuala Lumpur">Kuala Lumpur</option>
+                        <option value="Kuala Terengganu">Kuala Terengganu</option>
+                        <option value="Kota Kinabalu">Kota Kinabalu</option>
+                        <option value="Kuching">Kuching</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Cabin Class:</td>
+                <td>
+                    <select name="cabin_class" required>
+                        <option value="">- Please Select -</option>
+                        <option value="Economy Class">Economy Class</option>
+                        <option value="Business Class">Business Class</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Number of Persons:</td>
+                <td><input type="number" name="number_of_persons" min="1" max="10" required placeholder="numbers only between 1 to 10"></td>
+            </tr>
+            <tr>
+                <td>Departure Date:</td>
+                <td><input type="date" name="departure_date" required></td>
+            </tr>
+            <tr>
+                <td>Departure Time:</td>
+                <td><input type="time" name="departure_time" required></td>
+            </tr>
+            <tr>
+                <td>Services:</td>
+                <td>
+                    <input type="checkbox" name="service[]" value="Boarding"> Boarding
+                    <input type="checkbox" name="service[]" value="Fooding"> Fooding
+                    <input type="checkbox" name="service[]" value="Sight Seeing"> Sight Seeing
+                </td>
+            </tr>
+            <tr>
+                <td>Coupon Code:</td>
+                <td><input type="text" name="coupon_code" placeholder="ABC123"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="terms">
+                    <input type="checkbox" name="term_checkbox" required> I accept the terms and conditions
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Complete Reservation">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
